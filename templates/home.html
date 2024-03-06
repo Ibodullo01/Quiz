@@ -8,9 +8,9 @@
 
     <hr>
   {% if user.is_authenticated %}
-    {% for category in categories %}
-    <a href="{% url 'app:question_list' category.slug %}"> {{ category.name }} </a>
-    {% endfor %}
-    {% endif %}
+        {% for category in categories %}
+        <a href="{% url 'app:question_list' category.slug %}"> {{ category.name }} </a>
+        {% endfor %}
+  {% endif %}
 
 {% endblock %}
