@@ -23,14 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rp0n*jk^lt=2xp@m_t)nfvse8yhvreiq^=a!2=j_@yepv)0_t7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://ibodullo.pythonanywhere.com/']
+ALLOWED_HOSTS = ['ibodullo.pythonanywhere.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
