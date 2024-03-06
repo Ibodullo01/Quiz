@@ -7,9 +7,10 @@
     <h1> Home Page </h1>
 
     <hr>
-
+  {% if user.is_authenticated %}
     {% for category in categories %}
     <a href="{% url 'app:question_list' category.slug %}"> {{ category.name }} </a>
     {% endfor %}
+    {% endif %}
 
 {% endblock %}
